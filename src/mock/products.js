@@ -1,5 +1,5 @@
 export const products = [
-  // Productos existentes...
+  
   {
     id: 8,
     name: 'Tomate',
