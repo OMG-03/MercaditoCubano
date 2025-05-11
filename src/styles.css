@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #f8fafc;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  letter-spacing: -0.5px;
+}
+
+a {
+  transition: color 0.2s;
+}
+
+button {
+  transition: background 0.2s, color 0.2s;
+}
+
