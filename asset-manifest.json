@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/MercaditoCubano/static/css/main.d64cbb3d.css",
-    "main.js": "/MercaditoCubano/static/js/main.78026f9d.js",
+    "main.css": "/MercaditoCubano/static/css/main.6772354b.css",
+    "main.js": "/MercaditoCubano/static/js/main.17b66cc5.js",
     "index.html": "/MercaditoCubano/index.html",
-    "main.d64cbb3d.css.map": "/MercaditoCubano/static/css/main.d64cbb3d.css.map",
-    "main.78026f9d.js.map": "/MercaditoCubano/static/js/main.78026f9d.js.map"
+    "main.6772354b.css.map": "/MercaditoCubano/static/css/main.6772354b.css.map",
+    "main.17b66cc5.js.map": "/MercaditoCubano/static/js/main.17b66cc5.js.map"
   },
   "entrypoints": [
-    "static/css/main.d64cbb3d.css",
-    "static/js/main.78026f9d.js"
+    "static/css/main.6772354b.css",
+    "static/js/main.17b66cc5.js"
   ]
 }
