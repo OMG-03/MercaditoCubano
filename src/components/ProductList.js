@@ -6,7 +6,7 @@ import { products } from '../mock/products';
 const ProductList = () => {
   const [filteredProducts, setFilteredProducts] = useState(products);
   const [reservedProducts, setReservedProducts] = useState([]);
-  const [currentDay] = useState(20);
+  const [currentDay] = useState(new Date().getDate());
 
   const handleFilter = (filters) => {
     let result = [...products].filter(p => 
