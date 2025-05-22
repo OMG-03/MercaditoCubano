@@ -1,7 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 const MercaditoHeader = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef();
+
+  // Cerrar el menú al hacer click fuera
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+    if (menuOpen) {
+      document.addEventListener('mousedown', handleClickOutside);
+    } else {
+      document.removeEventListener('mousedown', handleClickOutside);
+    }
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuOpen]);
 
   return (
     <header className="bg-green-700 shadow-sm sticky top-0 z-10">
@@ -26,17 +44,18 @@ const MercaditoHeader = () => {
         </button>
         {/* Menú de navegación */}
         <nav
+          ref={menuRef}
           className={`$ {
             menuOpen ? 'block' : 'hidden'
           } absolute top-full left-0 w-full bg-green-700 sm:static sm:block sm:w-auto`}
         >
           <ul className="flex flex-col sm:flex-row text-center sm:text-left space-y-2 sm:space-y-0 sm:space-x-6 p-4 sm:p-0">
-            <li><a href="#inicio" className="text-green-100 hover:text-white block">Inicio</a></li>
-            <li><a href="#productos" className="text-green-100 hover:text-white block">Productos</a></li>
-            <li><a href="#pagos" className="text-green-100 hover:text-white block">Pagos</a></li>
-            <li><a href="#puntos" className="text-green-100 hover:text-white block">Puntos</a></li>
-            <li><a href="#contacto" className="text-green-100 hover:text-white block">Contacto</a></li>
-            <li className="sm:hidden"><button className="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900 transition-colors w-full mt-2">Mi cuenta</button></li>
+            <li><a href="#inicio" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Inicio</a></li>
+            <li><a href="#productos" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Productos</a></li>
+            <li><a href="#pagos" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Pagos</a></li>
+            <li><a href="#puntos" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Puntos</a></li>
+            <li><a href="#contacto" className="text-green-100 hover:text-white block" onClick={() => setMenuOpen(false)}>Contacto</a></li>
+            <li className="sm:hidden"><button className="bg-green-800 text-white px-4 py-2 rounded-lg hover:bg-green-900 transition-colors w-full mt-2" onClick={() => setMenuOpen(false)}>Mi cuenta</button></li>
           </ul>
         </nav>
         {/* Botón Mi cuenta solo visible en desktop */}
