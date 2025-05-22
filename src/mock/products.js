@@ -27,7 +27,7 @@ export const products = [
     name: 'Aguacate',
     category: 'Frutas',
     price: '30',
-    image: '/imagenes/aguac.jpg',
+    image: 'imagenes/aguac.jpg',
     farmer: 'Familia Hernández',
     province: 'Mayabeque',
     available: 8,
