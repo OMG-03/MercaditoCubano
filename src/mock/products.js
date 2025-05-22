@@ -5,7 +5,7 @@ export const products = [
     name: 'Tomate',
     category: 'Vegetales',
     price: '15',
-    image: '/imagenes/tomate.jpg',
+    image: 'imagenes/tomate.jpg',
     farmer: 'Granja El Rincón',
     province: 'La Habana',
     available: 12,
