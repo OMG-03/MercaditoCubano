@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/OMG-03/MercaditoCubano/static/css/main.fe38a265.css",
-    "main.js": "/OMG-03/MercaditoCubano/static/js/main.e64867f3.js",
-    "index.html": "/OMG-03/MercaditoCubano/index.html",
-    "main.fe38a265.css.map": "/OMG-03/MercaditoCubano/static/css/main.fe38a265.css.map",
-    "main.e64867f3.js.map": "/OMG-03/MercaditoCubano/static/js/main.e64867f3.js.map"
+    "main.css": "/MercaditoCubano/static/css/main.fe38a265.css",
+    "main.js": "/MercaditoCubano/static/js/main.e64867f3.js",
+    "index.html": "/MercaditoCubano/index.html",
+    "main.fe38a265.css.map": "/MercaditoCubano/static/css/main.fe38a265.css.map",
+    "main.e64867f3.js.map": "/MercaditoCubano/static/js/main.e64867f3.js.map"
   },
   "entrypoints": [
     "static/css/main.fe38a265.css",
